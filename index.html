@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<body lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/styles.css">
+	<title>Anh Cube</title>
+	<link rel="Shortcut Icon" href="https://th.bing.com/th/id/R.c921f2b5cb45bb57c55de0690b247c25?rik=ph4ACER9a37HxQ&pid=ImgRaw&r=0" type="image/x-icon" />
+</head>
+
+<body>
+	<div class="title">
+		My Love
+	</div>
+	<div class="cube">
+		
+		<div class="outer-cube">
+			<div class="outer-top">
+				<img alt="a1.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a1.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+			<div class="outer-bottom">
+				<img alt="a2.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a2.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+			<div class="outer-front">
+				<img alt="a3.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a3.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+			<div class="outer-back">
+				<img alt="a4.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a4.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+			<div class="outer-left">
+				<img alt="a5.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a5.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+			<div class="outer-right">
+				<img alt="a6.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a6.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+		</div>
+		
+		<div class="inner-cube">
+			<div class="inner-top">
+				<img alt="a1.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a1.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+			<div class="inner-bottom">
+				<img alt="a2.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a2.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+			<div class="inner-front">
+				<img alt="a3.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a3.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+			<div class="inner-back">
+                    <img alt="a4.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a4.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+			<div class="inner-left">
+				<img alt="a5.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a5.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+			<div class="inner-right">
+				<img alt="a6.gif" src="https://github.com/Panbap/spinning3Dcube/blob/main/images/a6.gif?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm">
+			</div>
+		</div>
+	</div>
+	
+	<div>
+		<div class="message">
+			<div class="tip">
+				Này em
+			</div>
+		</div>
+	</div>
+
+</body>
+<script>
+    const messages = [
+		"Đi đi em do dự trời tối mất",
+        "Cười đi em ủ rũ ngày trôi mất",
+        "Tin đi đừng để lòng thêm khổ",
+        "Nói đi em im lặng duyên không chờ ",
+		"Yêu đi em sợ hãi ta mất nhau",
+    ];
+
+    let currentIndex = 0;
+
+    function changeMessage() {
+        const tipElement = document.querySelector(".tip");
+        tipElement.textContent = messages[currentIndex];
+        
+        currentIndex = (currentIndex + 1) % messages.length;
+    }
+
+    setInterval(changeMessage, 4000);
+</script>
+
+</html>
